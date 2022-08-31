@@ -1,0 +1,158 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 52%;
+}
+
+label {
+  color: hsl(278, 68%, 11%);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  display: block;
+}
+
+input {
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 7px;
+  height: 45px;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 4px;
+}
+
+input:focus,
+input:active {
+  outline: none;
+  border: 2px solid #6657b2;
+}
+
+/* FORM STUFF */
+input::placeholder {
+  color: hsl(270, 3%, 87%);
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.errorMessage {
+  color: hsl(0, 100%, 66%);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.errorBorder {
+  border: 2px solid hsl(0, 100%, 66%);
+}
+
+/* INPUT WIDTHS */
+#cardName,
+#cardNumber {
+  width: 380px;
+}
+
+#expDateMonth,
+#expDateYear {
+  width: 100px;
+}
+
+#cvc {
+  width: 190px;
+}
+
+/* FORM STUFF */
+input::placeholder {
+  color: hsl(270, 3%, 87%);
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+#expDateYear {
+  margin-left: 10px;
+}
+
+.cardName label {
+}
+
+.cardNumber {
+  margin-top: 25px;
+}
+
+.cardDetails {
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  margin-top: 25px;
+  width: 380px;
+}
+
+.expDateMonth {
+  width: 50%;
+}
+
+#expDateMonth {
+  width: 80px;
+}
+
+#expDateYear {
+  width: 80px;
+}
+
+.cvc {
+  width: 50%;
+}
+
+button {
+  background: hsl(278, 68%, 11%);
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 40px;
+  padding: 16px 100px;
+  width: 380px;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 1292px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    width: 100%;
+  }
+
+  .cardNumber {
+    margin-top: 20px;
+  }
+
+  .cardDetails {
+    margin-top: 20px;
+  }
+
+  #cardName,
+  #cardNumber {
+    width: 330px;
+  }
+
+  .cardDetails {
+    width: 330px;
+  }
+
+  #cvc {
+    width: 150px;
+  }
+
+  button {
+    margin-top: 30px;
+    width: 330px;
+  }
+}
